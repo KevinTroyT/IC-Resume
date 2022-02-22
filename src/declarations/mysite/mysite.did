@@ -1,0 +1,4 @@
+service : {
+  getNum: () -> (nat);
+  thumbsUp: () -> (nat);
+}

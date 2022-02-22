@@ -1,19 +1,12 @@
+import "./js/index"
+import "./css/index.css"
 import { mysite } from "../../declarations/mysite";
 
-document.querySelector("form").addEventListener("submit", async (e) => {
-  e.preventDefault();
-  const button = e.target.querySelector("button");
+async function getNum(){
+  const nums = await mysite.getNum();
+  document.getElementById("thumbsUp").innerText = "点赞 " + greeting;
+}
 
-  const name = document.getElementById("name").value.toString();
-
-  button.setAttribute("disabled", true);
-
-  // Interact with foo actor, calling the greet method
-  const greeting = await mysite.greet(name);
-
-  button.removeAttribute("disabled");
-
-  document.getElementById("greeting").innerText = greeting;
-
-  return false;
-});
+async function click(){
+  mysite.thumbsUp()
+}
