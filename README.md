@@ -1,4 +1,4 @@
-# Resume in Internet Computer
+# Résumé in Internet Computer
 
   
 
