@@ -1,6 +1,6 @@
 actor {
     var nums = 0;
-    public func getNum() : async Nat {
+    public func getNum() : Nat {
         return nums;
     };
     public func thumbsUp() : async Nat{
